@@ -13,7 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_into_singletop_launch_mode"
-        android:text="SingleTop Launch Mode"
+        android:text="Into SingleTop Launch Mode"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_into_singletask_launch_mode"
+        android:text="Into SingleTask Launch Mode"
         android:textAllCaps="false"/>
 
 </LinearLayout>

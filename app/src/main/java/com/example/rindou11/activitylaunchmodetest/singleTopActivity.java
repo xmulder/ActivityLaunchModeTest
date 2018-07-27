@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class singleTopActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class singleTopActivity extends AppCompatActivity {
         singleTopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(singleTopActivity.this,"This is singleTop Launch Mode.",Toast.LENGTH_SHORT).show();
                 Intent singletopIntent=new Intent(singleTopActivity.this,singleTopActivity.class);
                 startActivity(singletopIntent);
             }

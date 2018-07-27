@@ -9,18 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity"
-            android:label="Activity Fourth Launches">
+            android:name=".standardActivity"
+            android:label="Standard Launch"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".singleTopActivity"
+
+        <activity
+            android:name=".singleTopActivity"
             android:label="SingleTop Launch"
-            android:launchMode="singleTop"></activity>
+            android:launchMode="singleTop" />
+
+        <activity android:name=".singleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="SingleTask Launch"/>
+        <activity android:name=".singleTaskActivity2"
+            android:label="SingleTask Launch 2"/>
+
     </application>
 
 </manifest>
